@@ -7,17 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
     <h1>Riley's Blog</h1>
     <nav>
         <ul>
             <li><a href="index.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
-
-    <main>
-        <article>
+</header>
+    <section id="blog">
+        <article class="blog-post">
             <h2>Contortionist Show in Grand Rapids</h2>
+            <time datetime="2022-10-16" title="October 16, 2022">Oct 16, 2022</time>
             <p>
                 <img src="Contortionist.jpg" alt="The Contortionist's Album Exoplanet's Album Cover"><br>
                 The Contortionist is a progressive metal band from Indianapolis, IN. In mid-2022, they set out on
@@ -30,14 +33,42 @@
                 having <a href="https://www.fox2detroit.com/news/joint-became-loose-causing-floor-to-flex-at-saint-andrews-hall-during-concert-officials-say">nearly collapsed</a>
                 during a show in March 2022. The band may have avoided some of the outrage had they announced the cancellation several days prior to at least inform their Michigan 
                 fanbase that there would only be a single date in Michigan for the tour. The failure to do so has left several fans devestated, as the band is unlikely to ever
-                perform most of the songs on the aforementioned albums live ever again, especially in the same manner. 
+                perform most of the songs on the aforementioned albums live ever again, especially in the same manner. </p>
+
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>9/26</td>
+                        <td>Minneapolis, MN @ Cabooze</td>
+                    </tr>
+                    <tr>
+                        <td>9/27</td>
+                        <td>Chicago, IL @ Bottom Lounge</td>
+                    </tr>
+                    <tr>
+                        <td>9/28</td>
+                        <td>Detroit, MI @ St Andrew's Hall</td>
+                    </tr>
+                    <tr>
+                        <td>9/30</td>
+                        <td>Montral, QC @ Le Studio Td</td>
+                    </tr>
+                    <tr>
+                        <td>10/1</td>
+                        <td>Toronto, ON @ Opera House</td>
+                    </tr>
+                </table>
 
                 <footer><i>Published by Riley Tucker October 16th, 2022</i></footer>
-            </p>
+            
         </article>
 
-        <article>
+        <article class="blog-post">
             <h2>Darkmoon Card Greatness</h2>
+            <time datetime="2022-10-16" title="October 16, 2022">Oct 16, 2022</time>
             <p>
                 Darkmoon Card: Greatness is a legendary piece of equipment in World of Warcraft: Wrath of The Lich King Classic. It is a crafted item that is BiS (Best-in-Slot)
                 for any class that is able to take advantage of it throughout the first 2 raid tiers of the expansion, Naxxramas (Tier 7) and Ulduar (Tier 8). 
@@ -51,13 +82,22 @@
                 value of Ace through 8 and there are four decks to which they belong: Undeath, Prisms, Chaos, and the deck which creates a Darkmoon Card: Greatness, Nobles. 
                 By combining one of each face value of the same type of card, you create the corresponding deck which can then be handed in at the Darkmoon Faire. However,
                 the Darkmoon Faire is only active one week out of the month, so naturally the price of the item goes up while it is not available, as no new DMCGs can be
-                created. 
+                created. </p>
                 <br><img src="DMCG.png" alt="Darkmoon Card: Greatness">
     
+
                 <footer><i>Published by Riley Tucker October 16th, 2022</i></footer>
-            </p>
+            
         </article>
-    </main>
+    </section>
+    <section>
+        <form>
+            <label>Sign up for our newsletter
+            <input type="text">
+            </label>
+            <button>Subscribe</button>
+        </form>
+    </section>
 
 </body>
 </html>
