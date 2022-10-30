@@ -1,0 +1,49 @@
+* {
+    background-color: #466e51;
+    color: #b57b16;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 40px;
+    color: #242424;
+    border-top: 10px solid #242424;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 5px;
+}
+
+
+p {
+    line-height: 1.4em;
+    max-width: 800px;
+}
+
+#blog {
+    padding: 15px;
+    border-top: 3px solid #000;
+}
+
+.blog-post {
+    border-bottom: 2px solid #d6ccab;
+}
+
+nav a[href]{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #2f2f2f;
+}
+
+nav li{
+    color: #2f2f2f;
+    padding: 3px;
+}
+
+time {
+    color: #876b0f;
+}
+
+a[href]:visited{
+    color:#d6ccab;
+}
