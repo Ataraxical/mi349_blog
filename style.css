@@ -1,6 +1,14 @@
 * {
     background-color: #466e51;
-    color: #b57b16;
+    color: #f57b1f;
+}
+
+.header:after {
+    clear: both;
+    height: 0;
+    width: 100%;
+    content: '';
+    display: block;
 }
 
 body {
@@ -26,13 +34,29 @@ p {
     border-top: 3px solid #000;
 }
 
+figure {
+    float: left;
+    margin: 0;
+    margin-right: 10px;
+    caption-side: bottom;
+    text-align: center;
+    padding: 10px;
+    font-size: smaller;
+}
+
 .blog-post {
     border-bottom: 2px solid #d6ccab;
+}
+
+nav {
+    top: 0;
+    position: sticky;
 }
 
 nav a[href]{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #2f2f2f;
+
 }
 
 nav li{
@@ -41,9 +65,24 @@ nav li{
 }
 
 time {
-    color: #876b0f;
+    color: #a76b0f;
 }
 
 a[href]:visited{
     color:#d6ccab;
+}
+
+table {
+    padding: 10px;
+}
+footer {
+    margin-top: 10px;
+}
+
+div {
+    display: flex;
+}
+
+article {
+    margin: 10px;
 }
