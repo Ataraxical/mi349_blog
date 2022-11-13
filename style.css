@@ -3,14 +3,6 @@
     color: #f57b1f;
 }
 
-.header:after {
-    clear: both;
-    height: 0;
-    width: 100%;
-    content: '';
-    display: block;
-}
-
 body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 40px;
@@ -22,7 +14,6 @@ h1 {
     font-size: 3em;
     margin: 5px;
 }
-
 
 p {
     line-height: 1.4em;
@@ -49,8 +40,8 @@ figure {
 }
 
 nav {
-    top: 0;
     position: sticky;
+    top: 0;
 }
 
 nav a[href]{
@@ -62,6 +53,9 @@ nav a[href]{
 nav li{
     color: #2f2f2f;
     padding: 3px;
+    display: inline-block;
+    list-style-type: none;
+    
 }
 
 time {
@@ -85,4 +79,12 @@ div {
 
 article {
     margin: 10px;
+}
+
+@media (max-width: 400px) {
+    * {
+        font-size: 8px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    
 }
