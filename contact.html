@@ -25,11 +25,15 @@
             <label>Name
                 <input name="email" type="email" placeholder="Jon Doe">
             </label>
+
             <br>
+
             <label>Email Address
                 <input name="email" placeholder="You@Domain.com">
             </label>
+
             <br>
+
             <label>Reason for Contact</label>
             <select name="reason">
                 <option>Select an option</option>
@@ -37,16 +41,20 @@
                 <option>Looking for a Contractor</option>
                 <option>Interested in an Interview</option>
             </select>
-        </form>
-        <form>
+
+            <br>
+            
             <textarea name="message" rows="5" cols="35">Enter your message here...</textarea>
-        </form>
-        <form>
+
             <button type="submit">Submit</button>
         </form>
     </section>
 
-    <script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+        <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwMZXpsk2YxAlHOmtwLoe3YuSA4WKDFUnPNzUxeSGkyPjNshKwusvkgmKmYyOQ6fvTqsA/exec'
         const form = document.forms['submit-to-google-sheet']
       
