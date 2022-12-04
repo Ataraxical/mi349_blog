@@ -3,7 +3,7 @@ Paste this script into the 'Code.gs' tab in the Script Editor
 For a detailed explanation of this file, view 'form-script-commented.js'
 */
 
-var sheetName = 'Contact Form - Blog'
+var sheetName = 'Sheet1'
 var scriptProp = PropertiesService.getScriptProperties()
 
 function intialSetup () {
