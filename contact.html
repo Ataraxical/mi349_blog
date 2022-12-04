@@ -21,20 +21,17 @@
 
     <section id="contact-form">
         <h2>Contact Form</h2>
-        <form>
+        <form id="submit-to-google-sheet">
             <label>Name
-                <input type="text">
+                <input name="email" type="email" placeholder="Jon Doe">
             </label>
-
-        </form>
-        <form>
+            <br>
             <label>Email Address
-                <input type="text">
+                <input name="email" placeholder="You@Domain.com">
             </label>
-        </form>
-        <form>
+            <br>
             <label>Reason for Contact</label>
-            <select>
+            <select name="reason">
                 <option>Select an option</option>
                 <option>Saying Hi</option>
                 <option>Looking for a Contractor</option>
@@ -42,11 +39,23 @@
             </select>
         </form>
         <form>
-            <textarea rows="5" cols="35">Enter your message here...</textarea>
+            <textarea name="message" rows="5" cols="35">Enter your message here...</textarea>
         </form>
         <form>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMZXpsk2YxAlHOmtwLoe3YuSA4WKDFUnPNzUxeSGkyPjNshKwusvkgmKmYyOQ6fvTqsA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

@@ -88,3 +88,29 @@ article {
     }
     
 }
+
+/*  Taken from https://www.w3schools.com/howto/howto_css_placeholder.asp  */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: orange;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: orange;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: orange;
+  }
+
+  select {
+    color: orange;
+  }
+
+  form textarea {
+    color: orange;
+  }
+
+  form input {
+    color: orange;
+  }
